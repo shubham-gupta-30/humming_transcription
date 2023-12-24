@@ -40,6 +40,11 @@ python eval.py /path/to/model/checkpoint /path/to/dataset --onset_tolerance 5 --
 ```
 All other results in our report table can be obtained by plating around with the 2 flags we mentioned above. the flag `use_filtered_data` just means that we are only evaluating over the filtered test set we created. We evaluated our model over the entrie test set, and not just the filtered test set and compared it with other methods, and did not see significant change in performance. Due to space constraints in the report, we oomit that discussion there. 
 
+## Convert wav file representing humming to midi with piano.
+To obtain a midi file corresponding to a humming wav, simply use following command:
+```
+python wav_to_midi.py /path/to/model/checkpoint /path/to/humming/wav /path/for/output/midi
+```
 
 ## Contact
 Please feel free to contact the authors for any further clarifications.
