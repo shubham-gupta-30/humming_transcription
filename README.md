@@ -17,6 +17,8 @@ The notebooks contained in the `notebook/` folder contain all the explorations r
 ## Model checkpoint
 The trained model checkpoint we present in our report is at `checkpoints/harmonic_cqt.pt`. This is trained for `3` epochs, as we stopped seeing any further improvements in tracked metrics and the network seems to converge. We also experiemnted with a smaller model, which we do not include in our report, and the checkpoint for that is located at `checkpoints/cqt_1d.pt`.
 
+P.S: We are having some trouble uploading our model checkpoints through GIT LFS at the moment. We are working to fix this issue, in the meanwhile, please contact the authors for access to those trained checkpoints.
+
 ## Data Loader
 The loader for the humtrans  dataset is located in `loader.py`. To only work with the filtered dataset with correct onsets, just transfer the zip files from the `heurestic_filtered_onsets_offsets` folder in  the main `HumTrans` dataset folder and depending on the split you desire, you can provide the appropriate file name  while instantiating the `HumTransDataset` class. This dataset class and the accompanying collate function `CustomCollate` for creating a DataLoader has support for a lot of useful functionality:
 - Its possible to preload the audio files for faster training (if there is enough CPU memory)
