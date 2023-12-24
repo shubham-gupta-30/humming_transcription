@@ -46,5 +46,9 @@ To obtain a midi file corresponding to a humming wav, simply use following comma
 python wav_to_midi.py /path/to/model/checkpoint /path/to/humming/wav /path/for/output/midi
 ```
 
+## Final results reported by our methods compared to current SOTA methods
+<img width="426" alt="image" src="https://github.com/shubham-gupta-30/piano_transcription/assets/127571426/51fca2c1-d9f7-436b-979d-f3028092687c">
+
+
 ## Contact
 Please feel free to contact the authors for any further clarifications.
